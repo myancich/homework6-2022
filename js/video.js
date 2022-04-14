@@ -1,4 +1,4 @@
-var video;
+var video = document.getElementById("player1");
 
 window.addEventListener("load", function() {
 	video = document.querySelector("#player1").loop = false;
