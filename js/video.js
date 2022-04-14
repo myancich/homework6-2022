@@ -1,7 +1,7 @@
 var video = document.getElementById("player1");
 
 window.addEventListener("load", function() {
-	video = document.querySelector("#player1").loop = false;
+	video = document.querySelector("#player1")//.loop = false;
 	console.log("Good job opening the window")
 
 });
@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play();
-	let vol = document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
+	document.querySelector("#volume").innerHTML = (video.volume * 100) + "%";
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
